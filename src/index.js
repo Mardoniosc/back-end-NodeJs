@@ -1,8 +1,10 @@
 const express = require('express')
 const app = express()
 
-app.get('/projects', (req, res) => {
+app.get('/', (req, res) => {
   return res.send({ msg: 'ok' })
 })
 
-app.listen()
+app.listen(4200, () => {
+  console.log('🚀️ Back-end started')
+})
